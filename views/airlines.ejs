@@ -1,0 +1,26 @@
+<!-- dropdowns needed inside form -->
+
+<%- include('partials/header'); %>
+<h3 style="margin-left:200px; margin-top:30px;">SEARCH FLIGHTS:</h3>
+<div id="airlines">
+<form action="/airlines" method="POST">
+ <label for="airport">From:</label>
+  <select id="flight" name="flight">
+    <option value="BLR">BLR</option>
+    <option value="DEL">DEL</option>
+    <option value="GOI">GOI</option>
+    <option value="BOM">BOM</option>
+    <option value="HYD">HYD</option>
+  </select>
+  <label for="destination">To:</label>
+  <select id="flightTo" name="flightTo">
+    <option value="BLR">BLR</option>
+    <option value="DEL">DEL</option>
+    <option value="GOI">GOI</option>
+    <option value="BOM">BOM</option>
+    <option value="HYD">HYD</option>
+  </select>
+  <input type="submit" style="background-color: rgba(32, 141, 32, 0.842); border-radius: 25px;;">
+</form>
+</div>
+<%- include('partials/footer'); %>

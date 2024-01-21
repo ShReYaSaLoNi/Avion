@@ -1,0 +1,41 @@
+<!-- table needed-->
+
+<%- include('partials/header'); %>
+<div class="container">
+<% var i=0 %>
+<table>
+    <thead>
+    <tr>
+        <th>Flight</th>
+        <th></th>
+        <th>Price</th>
+        <th>Book Now</th>
+    </tr>
+</thead>
+<tbody>
+    <% while(i!= count){ %>
+    <tr>
+        <form action="/booking" method="POST">
+        <td><label for="plane" name="plane"><%= airplaneName[i] %></label>
+            <input type="hidden" name="plane" value="<%= airplaneName[i] %>"></td></td>
+        <td><label for="route" name="route" hidden><%= routeCode[i] %></label>
+            <input type="hidden" name="route" value="<%= routeCode[i] %>"></td>
+        <td><label for="amount" name="amount"><%= amounts[i] %></label>
+            <input type="hidden" name="amount" value="<%= amounts[i] %>"></td>
+        <td style="width: 140px;"><button class="btn btn-outline-success w-100 py-2" type="submit">+</button></td>
+        </form>
+    </tr>
+    <% i++; }; %>
+<!--<% airplaneName.forEach((airplane)=>{ %>
+    <p><%= airplane %></p>
+<% }) %>
+</p>
+<p>
+<% amounts.forEach((amount)=>{ %>
+    <p><%= amount %></p>
+<% }) %>
+-->
+</tbody>
+</table>
+</div>
+<%- include('partials/footer'); %>

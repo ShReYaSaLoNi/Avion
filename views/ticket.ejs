@@ -1,0 +1,23 @@
+<%- include('partials/header'); %>
+
+<h3 style="margin-left:100px; margin-bottom:10px;">CONGRATULATIONS! Booking Confirmed</h3>
+<div class="booking">
+<form action="/savedTickets" method="POST">
+<p><label for="name"><%= username %></label>
+<input type="hidden" name="name" value="<%= username %>"></p>
+<p><label for="mail"><%= email %></label>
+<input type="hidden" name="mail" value="<%= email %>"></p>
+<p><label for="address"><%= address %></label></p>
+<input type="hidden" name="address" value="<%= address %>"></p>
+<p><label for="mobile"><%= mobile %></label></p>
+<input type="hidden" name="mobile" value="<%= mobile %>"></p>
+<p><label for="from"><%= from %></label></p>
+<input type="hidden" name="from" value="<%= from %>"></p>
+<p><label for="to"><%= to %></label></p>
+<input type="hidden" name="to" value="<%= to %>"></p>
+<p><label for="date"><%= date %></label></p>
+<input type="hidden" name="date" value="<%= date %>"></p>
+<button type="submit" class="btn btn-outline-success">View All</button>
+</form>
+</div>
+<%- include('partials/footer'); %>

@@ -1,0 +1,22 @@
+<!--containers needed-->
+<%- include('partials/header'); %>
+
+<% tickets.forEach((ticket)=>{ %>
+    <div id="allTickets">
+    <p style="padding-left: 200px;"><%= ticket.name %></p>
+    <p style="padding-left: 200px;"><%= ticket.mail %></p>
+    <p style="padding-left: 200px;"><%= ticket.address %></p>
+    <p style="padding-left: 200px;"><%= ticket.mobile %></p>
+    <p style="padding-left: 200px;"><%= ticket.from %></p>
+    <p style="padding-left: 200px;"><%= ticket.to %></p>
+    <p style="padding-left: 200px;"><%= ticket.date %></p>
+    <!--
+         <form action="/delete" method="POST">
+        <p></p>
+        <button type="submit">Del</button>
+    </form>
+    -->
+    </div>
+<% }); %>
+
+<%- include('partials/footer'); %>

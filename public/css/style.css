@@ -1,0 +1,116 @@
+body{
+    background-color: #D6E4E5;
+}
+
+img{
+    width:100%;
+    height:50%;
+    opacity: 0.4;
+}
+
+.imgdash{
+    width:80%;
+    height:100%;
+    opacity:1;
+    padding-left:50px;
+}
+.outerbox{
+    border: 1px solid #497174;
+    background-size: 400px 400px;
+    padding:15px 0px 15px 0px;
+    text-align: center;
+    border-radius: 5%;
+    margin-left: 100px;
+}
+
+.text {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    transform: translate(-65%, 20%);
+    font-family: 'Libre Baskerville', serif;
+    font-size: 52px;
+    text-align: left;
+    color:#497174;
+    width:80%;
+    text-shadow: 2px 2px #D6E4E5;
+  }
+
+.login{
+    box-sizing: border-box;
+    margin:100px 460px 0px 460px;
+}
+
+.signup{
+    box-sizing: border-box;
+    margin:100px 450px 0px 450px;
+}
+
+.iconbar{
+    background-color: #497174;
+}
+
+.loginSignup{
+    background-color: #D6E4E5;
+}
+
+table {
+    margin-top: 90px;
+    margin-left: 100px;
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  th,
+  td {
+    padding: 15px;
+    background-color: #284b564a;
+    color: #fff
+  }
+
+  thead th {
+    background-color: #497174
+  }
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  tbody td {
+    position: relative;
+  }
+  tbody td:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+
+#airlines{
+  margin-top: 30px;
+  margin-left: 200px;
+  padding-left:25px;
+  padding-top:50px;
+  width:800px;
+  height:150px;
+  background-color: #284b564a;
+}
+
+#allTickets{
+  width:60%;
+  height:260px;
+  background-color: #284b564a;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
+
+.booking{
+  background-color: #284b564a;
+  padding-left: 100px;
+}
+
